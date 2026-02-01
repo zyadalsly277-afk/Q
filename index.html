@@ -435,7 +435,6 @@
                 opacity: 0;
                 transform: translateY(-10px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1790,6 +1789,15 @@
                             <option value="10+">أكثر من 10 مليون</option>
                         </select>
                     </div>
+                    <div class="search-group">
+                        <label for="condition">حالة العقار</label>
+                        <select id="condition">
+                            <option value="">اختر الحالة</option>
+                            <option value="طوب احمر">طوب أحمر</option>
+                            <option value="نص تشطيب">نص تشطيب</option>
+                            <option value="متشطب">متشطب</option>
+                        </select>
+                    </div>
                     <button class="search-button" type="submit">
                         <i class="fas fa-search"></i>
                         بحث متقدم
@@ -2700,7 +2708,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "طوب احمر"
                 }
             },
             2: {
@@ -2715,7 +2724,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             3: {
@@ -2741,7 +2751,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
             4: {
@@ -2756,7 +2767,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "طوب احمر"
                 }
             },
             5: {
@@ -2771,7 +2783,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "طوب احمر"
                 }
             },
             6: {
@@ -2786,7 +2799,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             7: {
@@ -2809,7 +2823,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             8: {
@@ -2833,7 +2848,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             9: {
@@ -2849,7 +2865,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
             10: {
@@ -2865,14 +2882,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             11: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (ع)",
                 price: " 1,820,000  ج.م",
-                features: ["3 غرف", "2 حمامات", "140 м²", "وجهه", "متاح جميع الادوار"],
+                features: ["3 غرف", "2 حمامات", "140 م²", "وجهه", "متاح جميع الادوار"],
                 description: "واجهة سوبر لوكس – 📐 140 متر🛏 3 غرف –2  حمام ",
                 images: [
                     "images/72A.jpg",
@@ -2881,7 +2899,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             12: {
@@ -2897,7 +2916,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             13: {
@@ -2912,14 +2932,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
             14: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (هـ)",
                 price: "2,800,000 ج.م",
-                features: ["3 غرف", "3 حمامات", "200 м²", "وجهه", "متاح جميع الادوار", "خطوات للبوابه"],
+                features: ["3 غرف", "3 حمامات", "200 م²", "وجهه", "متاح جميع الادوار", "خطوات للبوابه"],
                 description: "شقه واجهة خطوات للبوابة – حرف (هـ)موقع قوي جدًا 200 متر 3 غرف –  3 حمام طوب أحمر السعر : 2,800,000 جنيه📍 حدائق الأهرام – حرف (هـ)  ",
                 images: [
                     "images/9m.jpg",
@@ -2927,14 +2948,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             15: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (هـ)",
                 price: "2,100,000 ج.م",
-                features: ["3 غرف", "2 حمامات", "150 м²", "وجهه", "خطوات للبوابه", "متاح جميع الادوار"],
+                features: ["3 غرف", "2 حمامات", "150 م²", "وجهه", "خطوات للبوابه", "متاح جميع الادوار"],
                 description: "واجهة خطوات للبوابة – حرف (هـ)تشطيب طوب احمر - 150 متر-  3 غرف –  2 حمام- السعر : 2,100,000 جنيه ---- متاح جميع الادوار - 📍 حدائق الأهرام – حرف (هـ) ",
                 images: [
                     "images/alsaf.jpg",
@@ -2943,7 +2965,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             16: {
@@ -2959,14 +2982,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "طوب احمر"
                 }
             },
             17: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (هـ)",
                 price: "1,750,000 ج.م",
-                features: ["3 غرف", "2 حمامات", "140 м²", "جانبي وخلفي ", "متاح جميع الادوار"],
+                features: ["3 غرف", "2 حمامات", "140 م²", "جانبي وخلفي ", "متاح جميع الادوار"],
                 description: "🔹 حدائق الأهرام – حرف (هـ) (جانبي / خلفي – خطوات للبوابة) 140 متر- 3 غرف –  2 حمام - طوب أحمر- متاح جميع الادوار 💰 السعر : 1,750,000 جنيه",
                 images: [
                     "images/alsaf.jpg",
@@ -2975,7 +2999,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "طوب احمر"
                 }
             },
             18: {
@@ -2991,14 +3016,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "طوب احمر"
                 }
             },
             19: {
                 title: "  شقة فاخر بحدائق الاهرام ڨيو أهرامات",
                 location: "حدائق الاهرام - منطقة (م)",
                 price: "3,330,000 ج.م",
-                features: ["3 غرف", "3 حمامات", "185 м²", "وجهه", " ڨيو مباشر على الأهرامات", " متاح دور اول وتالت ورابع"],
+                features: ["3 غرف", "3 حمامات", "185 م²", "وجهه", " ڨيو مباشر على الأهرامات", " متاح دور اول وتالت ورابع"],
                 description: "حدائق الأهرام حرف (م) (ڨيو أهرامات مباشر)- واجهة -– دور أول وتالت ورابع - 185 متر - 3 غرف –  3 حمام طوب أحمر ---💰 السعر : 3,330,000 جنيه",
                 images: [
                     "images/9m/9m2.jpeg",
@@ -3009,7 +3035,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "5-10"
+                    priceRange: "3-5",
+                    condition: "طوب احمر"
                 }
             },
             20: {
@@ -3026,14 +3053,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "5-10"
+                    priceRange: "3-5",
+                    condition: "طوب احمر"
                 }
             },
             21: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (ب)",
                 price: "2,230,000 ج.م",
-                features: ["3 غرف", "2 حمامات", "127 м²", "جانبي   بحري", "دور ثاني "],
+                features: ["3 غرف", "2 حمامات", "127 م²", "جانبي   بحري", "دور ثاني "],
                 description: "للبيع بحدائق الاهرام البوابه الاولي  منطقة ب 🚧خطواط من شارع الثروة والبوابة الاولي 💯الشارع الموازي لشارع الثروة المعدنية 💯موقع محترم جدا شارع 8 ب ⁉️127 متر تحميل  ممتاز تعادل 140 متر  💯 جانبي   بحري مفيش غرفة على منور تطل على شارع الثروة 💯مدفوع الاسانسير وعداد كهرباء 🎰دور ثاني 💎العمارة اشيك عقارات حدائق الاهرام 🏘️تشطيب الترا سوبر لوكس 🌇(مكونه من) (3غرف كبار جدا)  🌠- 2حمام🛁- مطبخ  ورشبشن كبير   🏡",
                 images: [
                     "images/J/1.jpeg",
@@ -3045,7 +3073,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
             22: {
@@ -3077,7 +3106,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             23: {
@@ -3097,7 +3127,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             24: {
@@ -3136,7 +3167,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
             25: {
@@ -3161,7 +3193,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             26: {
@@ -3193,7 +3226,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             27: {
@@ -3228,14 +3262,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             28: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (ك)",
                 price: "1,630,0000 ج.م",
-                features: ["2 غرف", " حمام 2", "100 м²", "  جانبـىة", "دور تالت"],
+                features: ["2 غرف", " حمام 2", "100 م²", "  جانبـىة", "دور تالت"],
                 description: "🔥للبيع شقه 100 م في حدائق📢 الاهرام (منطقه ك )عماره  اول سكن تشطيب الترا سوبر لوكس دور ثالث 2غرف و2 حمام ومطبخ وريسبشن قطعتين السعر المطلوب مليون 630 قابل للتفاوض",
                 images: [
                     "images/55/1.jpeg",
@@ -3249,14 +3284,15 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "1-3"
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
             29: {
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (ج) ",
                 price: "2,180,0000 ج.م",
-                features: ["3 غرف", " 2 حمام ", "130 м²", "  جانبـىة", "متاح دور تاني وتالت "],
+                features: ["3 غرف", " 2 حمام ", "130 م²", "  جانبـىة", "متاح دور تاني وتالت "],
                 description: "افضل لوكيشن في حدائق الاهرام وافضل واميز منطقه على الإطلاق منطقة جللبيع شقتين نفس النموذج فوق بعض مساحة الشقه 130 متر خلفيه شرقيه تحميل قديم  موقع مميز ثاني شارع من البوابة الاولي والبوابة الثانية الجديدة وثالث عماره من شارع جاردينيا الرئيسي  قريبه من المتحف المصري الكبير وخطوات لطريق الفيوم الدور الثاني والثالث كل شقه مكونة من 3 غرف كبار و 2 حمام ومطبخ كبيير وريسيبشن كبيير + مكان خاص بالسفرة أمام المطبخ تشطيب الترا سوبر لوكس اول سكن عداد كهرباء وعداد مياه خاص واسانسير شغال ومدفوع  عمارة حديثه حجر فرعوني مباني 2025يوجد فيديو توضيحي للشقه من الداخل السعر 2,180,000 ",
                 images: [
                     "images/81/1.jpeg",
@@ -3278,7 +3314,8 @@
                 searchData: {
                     type: "شقة",
                     location: "حدائق الاهرام",
-                    priceRange: "3-5"
+                    priceRange: "2-3",
+                    condition: "متشطب"
                 }
             },
 
@@ -3310,8 +3347,9 @@
                 ],
                 searchData: {
                     type: "شقة",
-                    location: "حدائق اكتوبر",
-                    priceRange: "3-5"
+                    location: "حدائق الاهرام",
+                    priceRange: "1-2",
+                    condition: "متشطب"
                 }
             },
         };
@@ -3369,13 +3407,14 @@
             const location = document.getElementById('location').value;
             const type = document.getElementById('type').value;
             const price = document.getElementById('price').value;
+            const condition = document.getElementById('condition').value;
 
             // إخفاء جميع العقارات أولاً
             const allProperties = document.querySelectorAll('.property-card');
-
+            
             // العدادات
             let visibleCount = 0;
-
+            
             // تصفية العقارات بناءً على المعايير
             allProperties.forEach(property => {
                 const propertyId = property.getAttribute('data-id');
@@ -3404,11 +3443,11 @@
                     // فلترة حسب السعر (إذا تم اختياره)
                     if (price) {
                         const priceRange = propertyData.searchData?.priceRange || '';
-
+                        
                         // تحويل السعر من النص إلى رقم
                         const priceText = propertyData.price.replace(/[^\d.]/g, '');
                         const propertyPrice = parseFloat(priceText);
-
+                        
                         // تحديد نطاق السعر بناءً على اختيار المستخدم - النسخة الجديدة
                         if (price === '1-2' && (propertyPrice < 1000000 || propertyPrice > 2000000)) {
                             matches = false;
@@ -3424,6 +3463,15 @@
                             matches = false;
                         }
                     }
+
+                    // فلترة حسب حالة العقار (إذا تم اختياره)
+                    if (condition) {
+                        const propCondition = propertyData.searchData?.condition || '';
+                        if (propCondition !== condition) {
+                            matches = false;
+                        }
+                    }
+
                     if (matches) {
                         property.style.display = 'block';
                         visibleCount++;
@@ -3435,20 +3483,20 @@
 
             // عرض رسالة النتائج
             const searchContainer = document.querySelector('.search-container');
-
+            
             // إزالة رسالة إعادة التعيين إن وجدت
             const resetMessage = searchContainer.querySelector('.reset-message');
             if (resetMessage) resetMessage.remove();
-
+            
             let messageEl = searchContainer.querySelector('.search-message');
-
+            
             if (!messageEl) {
                 messageEl = document.createElement('div');
                 messageEl.className = 'search-message';
                 messageEl.style.cssText = 'margin-top: 1rem; padding: 0.75rem; border-radius: 8px; text-align: center; font-weight: 600; animation: fadeIn 0.5s ease;';
                 searchContainer.appendChild(messageEl);
             }
-
+            
             if (visibleCount === 0) {
                 messageEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i> لم يتم العثور على عقارات تطابق معايير البحث';
                 messageEl.style.background = '#f8d7da';
@@ -3467,16 +3515,16 @@
                 messageEl.style.alignItems = 'center';
                 messageEl.style.justifyContent = 'center';
                 messageEl.style.gap = '0.5rem';
-
+                
                 // التمرير إلى قسم العقارات
                 setTimeout(() => {
-                    document.getElementById('properties').scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    document.getElementById('properties').scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
                     });
                 }, 300);
             }
-
+            
             // إخفاء الرسالة بعد 5 ثواني
             setTimeout(() => {
                 if (messageEl) messageEl.style.display = 'none';
@@ -3489,19 +3537,20 @@
             document.getElementById('location').value = '';
             document.getElementById('type').value = '';
             document.getElementById('price').value = '';
-
+            document.getElementById('condition').value = '';
+            
             // إظهار جميع العقارات
             const allProperties = document.querySelectorAll('.property-card');
             allProperties.forEach(property => {
                 property.style.display = 'block';
             });
-
+            
             // إخفاء رسالة البحث إن وجدت
             const messageEl = document.querySelector('.search-message');
             if (messageEl) {
                 messageEl.style.display = 'none';
             }
-
+            
             // عرض رسالة تأكيد بسيطة
             showResetMessage();
         }
@@ -3511,12 +3560,12 @@
             // إزالة الرسالة السابقة إذا كانت موجودة
             const oldMessage = document.querySelector('.reset-message');
             if (oldMessage) oldMessage.remove();
-
+            
             // إنشاء رسالة جديدة
             const messageEl = document.createElement('div');
             messageEl.className = 'reset-message';
             messageEl.innerHTML = '<i class="fas fa-check-circle"></i> تم إعادة تعيين البحث بنجاح';
-
+            
             // إضافة الأنماط
             messageEl.style.cssText = `
                 background: #d4edda;
@@ -3532,11 +3581,11 @@
                 gap: 0.5rem;
                 animation: fadeIn 0.5s ease;
             `;
-
+            
             // إضافة إلى حاوية البحث
             const searchContainer = document.querySelector('.search-container');
             searchContainer.appendChild(messageEl);
-
+            
             // إخفاء الرسالة بعد 3 ثوانٍ
             setTimeout(() => {
                 messageEl.style.opacity = '0';
