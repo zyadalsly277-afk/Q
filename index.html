@@ -371,6 +371,51 @@
             box-shadow: 0 10px 20px rgba(108, 117, 125, 0.2);
         }
 
+        /* رسائل البحث */
+        .search-message {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            animation: fadeIn 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .search-message.success {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .search-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .search-message i {
+            font-size: 1.2rem;
+        }
+
+        .reset-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: center;
+            border: 1px solid #c3e6cb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            animation: fadeIn 0.5s ease;
+        }
+
         /* تحسين أزرار السوشيال ميديا */
         .social-links a,
         .footer-social a {
@@ -1710,6 +1755,29 @@
             .modal-thumbnail {
                 width: 70px;
                 height: 50px;
+            }
+            
+            /* تحسين عرض رسالة البحث على الجوال */
+            .search-message {
+                flex-direction: column !important;
+                text-align: center;
+                padding: 0.8rem !important;
+                font-size: 0.9rem;
+                gap: 0.3rem !important;
+                margin-top: 0.8rem !important;
+            }
+            
+            .search-message i {
+                font-size: 1.2rem;
+            }
+            
+            .reset-message {
+                flex-direction: column;
+                text-align: center;
+                padding: 0.8rem;
+                font-size: 0.9rem;
+                gap: 0.3rem;
+                margin-top: 0.8rem;
             }
         }
     </style>
@@ -3270,7 +3338,7 @@
                 title: "  شقة فاخر بحدائق الاهرام ",
                 location: "حدائق الاهرام - منطقة (ك)",
                 price: "1,630,0000 ج.م",
-                features: ["2 غرف", " حمام 2", "100 م²", "  جانبـىة", "دور تالت"],
+                features: ["2 غرف", " حمام 2", "100 м²", "  جانبـىة", "دور تالت"],
                 description: "🔥للبيع شقه 100 م في حدائق📢 الاهرام (منطقه ك )عماره  اول سكن تشطيب الترا سوبر لوكس دور ثالث 2غرف و2 حمام ومطبخ وريسبشن قطعتين السعر المطلوب مليون 630 قابل للتفاوض",
                 images: [
                     "images/55/1.jpeg",
@@ -3499,22 +3567,10 @@
             
             if (visibleCount === 0) {
                 messageEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i> لم يتم العثور على عقارات تطابق معايير البحث';
-                messageEl.style.background = '#f8d7da';
-                messageEl.style.color = '#721c24';
-                messageEl.style.border = '1px solid #f5c6cb';
-                messageEl.style.display = 'flex';
-                messageEl.style.alignItems = 'center';
-                messageEl.style.justifyContent = 'center';
-                messageEl.style.gap = '0.5rem';
+                messageEl.className = 'search-message error';
             } else {
                 messageEl.innerHTML = `<i class="fas fa-check-circle"></i> تم العثور على ${visibleCount} عقار`;
-                messageEl.style.background = '#d1ecf1';
-                messageEl.style.color = '#0c5460';
-                messageEl.style.border = '1px solid #bee5eb';
-                messageEl.style.display = 'flex';
-                messageEl.style.alignItems = 'center';
-                messageEl.style.justifyContent = 'center';
-                messageEl.style.gap = '0.5rem';
+                messageEl.className = 'search-message success';
                 
                 // التمرير إلى قسم العقارات
                 setTimeout(() => {
@@ -3565,22 +3621,6 @@
             const messageEl = document.createElement('div');
             messageEl.className = 'reset-message';
             messageEl.innerHTML = '<i class="fas fa-check-circle"></i> تم إعادة تعيين البحث بنجاح';
-            
-            // إضافة الأنماط
-            messageEl.style.cssText = `
-                background: #d4edda;
-                color: #155724;
-                padding: 0.75rem;
-                border-radius: 8px;
-                margin-top: 1rem;
-                text-align: center;
-                border: 1px solid #c3e6cb;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.5rem;
-                animation: fadeIn 0.5s ease;
-            `;
             
             // إضافة إلى حاوية البحث
             const searchContainer = document.querySelector('.search-container');
